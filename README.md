@@ -1,5 +1,4 @@
-//This is rock paper scissor game my first project in my life
-//A multiplayer game rock paper scissor 
+//A multiplayer game rock paper scissor
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -8,11 +7,18 @@ int rockpaper(char player,char computer)
 {
     if(player==computer)
         return -1;
-    else if((player=='s' && computer=='z')||(player=='z' && computer=='p')||(player=='p' && computer=='s')){
+    else if(player=='s' && computer=='z'){
         return 1;
-      }
+    }
+    else if(player=='z' && computer=='p'){
+        return 1;
+    }
+    else if(player=='p' && computer=='s'){
+        return 1;
+    }
     else
     return 0;
+     
 }
 int main()
 {
